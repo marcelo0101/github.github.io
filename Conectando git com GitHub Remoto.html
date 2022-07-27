@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Conectando Projeto com GitHubr</title>
+</head>
+<body>
+
+
+
+     <h1>Criando o projeto Local </h1> 
+
+     <pre>
+     <ul>
+        <li> Criamos a Pasta local do Projeto</li>
+        <li> Iniciamos Git no projeto</li>
+        <strong>git init</strong>
+     </ul>
+
+     <h1>Criando o projeto Remoto GitHub</h1>
+     <li> Após criado o projeto no GitHub Remoto copiamos a URL do novo projeto</li>
+      - Neste exemplo é: https://github.com/MFJcode/color-flipper.git
+
+      <h1>Conectando o projeto Local com o repositorio remoto</h1>
+      <li>Agora dentro da pasta Local pelo Terminal e digitamos</li>
+     - git remote add origin [URL de tu repositorio]
+        neste caso ficaria:
+     - git remote add origin https://github.com/MFJcode/color-flipper.git
+
+     <h1>Subindo arquivos para o repositorio Remoto</h1>
+     - <strong>git add . </strong> (Este comando adiciona ao indice qualquer arquivo novo que foi modificado)
+
+     - Tambem temos a opção  
+       <strong>git add -u </strong> 
+       La opción -u sólo añade al índice aquellos ficheros que ya estén siendo monitorizados por git.
+       <strong>git add -A</strong> 
+       Al ejecutar el comando git add -A, se añadirán al índice los ficheros borrados, los modificados y los nuevos.
+
+    - Agora vamos fazer o COMMIT e também colocar uma observação ou mensagem a que se refere este commit, esta  mensagem  precisa 
+    ser bem clara por que os companheiros de projeto também vão ver e saber o que foi feito neste commit.
+
+     <strong>git commit -m "First Commit"</strong> 
+
+     - Agora os arquivos estão prontos para serem enviados e já podemos fazer o PUSH para que apareçam no gitHub remoto.
+
+     <strong>git push -u origin main</strong> 
+     <strong>git push -u origin master</strong> 
+
+     <h1>Descobrindo qual branch estamos usando </h1>
+
+     <strong>git branch</strong> 
+
+
+
+
+
+     Estudar como trocar da Branch master para main
+
+     <h1>Mover branch  master para a branch main</h1>
+
+     <strong>git branch -m master main</strong>
+
+     - Agora fazemos um upstream para aplicar a alteração no repositorio remoto
+
+     <strong>git push -u origin main</strong> 
+
+     <h1>Buscando as alterações feita no repositorio On-line</h1>
+     <strong>git pull</strong>
+     
+
+
+    </pre>
+    
+</body>
+</html>

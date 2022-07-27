@@ -1,0 +1,26 @@
+
+body {
+    font-size: 18px;
+}
+
+
+h1 {
+    color: #0f12d6;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  h2 {
+    color: #e60a0a;
+    font-weight: bold ;
+    font-size: 15px;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
